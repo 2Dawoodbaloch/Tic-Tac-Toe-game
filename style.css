@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,700&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(0deg, #8e44ad, #3498db);
+}
+
+.nav {
+    font-size: 30px;
+    background-color: black;
+    color: black;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    padding: 0px 50px;
+}
+
+ul {
+    list-style: none;
+}
+
+.container {
+    margin: 10px;
+    height: 350px;
+    color: black;
+    display: flex;
+    justify-content: center;
+}
+
+.game-container {
+    display: grid;
+    grid-template-columns: repeat(3, 10vw);
+    grid-template-columns: repeat(3, 10vw);
+    margin-left: 10px;
+}
+
+.box {
+    border: 5px solid black;
+    font-size: 7vw;
+    display: flex;
+    height: 120px;
+    justify-content: center;
+    align-items: center;
+    color: red;
+}
+
+.box:hover {
+    background-color: rgb(169, 205, 227);
+    cursor: pointer;
+}
+
+.game-info {
+    margin-left: 20px;
+}
+
+#btn {
+    border: 3px solid blue;
+    padding: 5px;
+    background-color: rgb(199, 73, 121);
+    border-radius: 50%;
+    width: 130px;
+    margin: 10px;
+    font-size: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+img {
+    width: 0px;
+    transition: 1s ease-in-out;
+
+}
+
+.Turn-info {
+    margin: 15px;
+    font-size: 30px;
+    font-family: cursive;
+    color: chartreuse;
+    font-size: bold;
+}
+
+h1 {
+    color: rgb(254, 254, 254);
+    margin: 5px 5px;
+    letter-spacing: 2px;
+    font-family: cursive;
+    font-size: 3vw;
+}
+
+.br-0 {
+    border-right: 0px;
+}
+
+.bl-0 {
+    border-left: 0px;
+}
+
+.bt-0 {
+    border-top: 0px;
+}
+
+.bb-0 {
+    border-bottom: 0px;
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 30px;
+        height: 700px;
+    }
+
+    .game-container {
+        display: grid;
+        grid-template-columns: repeat(3, 30vw);
+        grid-template-columns: repeat(3, 30vw);
+        margin-top: -30px;
+        margin: auto;
+    }
+
+}
